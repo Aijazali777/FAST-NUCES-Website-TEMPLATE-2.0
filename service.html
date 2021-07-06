@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Services</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+       
+        .row{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+            }
+        .service{
+                position: sticky;
+                align-items: baseline;
+                width: 80%;
+                margin:auto;
+                text-align:center;
+                padding: 100px;
+            }
+.service-col{
+    flex-basis: 31%;
+    background: #b97171;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 10px 0;
+}
+.service-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+            
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    padding: 10px;
+}
+.nav-links{
+    
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8;
+
+}
+.nav-links ul li a{
+    color: rgb(247, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+
+    content:'';
+    width: 0;
+    height: 2px;
+    background:#f44336;
+    display:block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(224, 8, 8, 0.2);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(op.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header h1{
+    margin-top: 100Px;
+}
+        </style>
+    </head>
+    <body>
+       
+
+        <section class="sub-header">
+            <nav>
+                 <a href="index.html"><img src="fast.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="file:///C:/Users/raza/Desktop/JavaS/j1.html">HOME</a></li>
+                        <li><a href="file:///C:/Users/raza/Desktop/JavaS/service.html"> SERVICES</a></li>
+                        <li><a href="file:///C:/Users/raza/Desktop/JavaS/cont.html"> CONTACT</a></li>
+                        <li><a href="file:///C:/Users/raza/Desktop/JavaS/about.html">ABOUT</a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+           
+            </section>
+        <section class="service">
+
+        
+            <h1>
+                Our Services 
+            </h1>
+            <div class="row">
+                
+                <div class="service-col">
+                <h2>Digital Library</h2><br>
+                </div>
+
+                <div class="service-col">
+                    <h2>SLATE LMS</h2>
+                </div>
+                <div class="service-col">
+                    <h2>Student Socities</h2><br>
+                    </div>
+            
+
+        </div>
+    </section>
+    </body>
+</html>
